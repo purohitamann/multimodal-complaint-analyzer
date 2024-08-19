@@ -29,7 +29,7 @@ const VoiceComponent: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className=" flex flex-col items-center justify-center">
             <h2 className={subtitle()}>Upload Voice File for Transcription</h2>
             <Spacer y={2} />
             <Input type="file" accept="audio/*" onChange={handleFileChange} />

@@ -34,7 +34,7 @@ const ImageComponent: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center">
             <h2 className={subtitle()} >Upload Image for Text Extraction</h2>
             <Spacer y={2} />
             <Input

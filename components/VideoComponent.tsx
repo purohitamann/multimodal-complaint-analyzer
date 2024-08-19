@@ -28,7 +28,7 @@ const VideoComponent: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center">
             < h2 className={subtitle()}>Upload Video for Analysis</h2>
             <Spacer y={2} />
             <Input

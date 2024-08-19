@@ -9,12 +9,14 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import VoiceComponent from "@/components/VoiceComponent";
 import TextComponent from "@/components/TextComponent";
+import Home from "@/components/Home";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         {/* <VoiceComponent /> */}
+        <Home />
       </section>
     </DefaultLayout>
   );
