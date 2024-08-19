@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Button, Input, Spacer, Container } from '@nextui-org/react';
-
+import { Button, Input, Spacer } from '@nextui-org/react';
+import { title } from "@/components/primitives";
+import { subtitle } from "@/components/primitives";
 const VideoComponent: React.FC = () => {
     const [videoData, setVideoData] = useState<string>('');
     const [result, setResult] = useState<string>('');
@@ -28,7 +29,8 @@ const VideoComponent: React.FC = () => {
 
     return (
         <div>
-            < h2>Upload Video for Analysis</h2>
+            < h2 className={subtitle()}>Upload Video for Analysis</h2>
+            <Spacer y={2} />
             <Input
                 type="file"
                 accept="video/*"
@@ -36,7 +38,7 @@ const VideoComponent: React.FC = () => {
                 fullWidth
                 aria-label="Upload Video"
             />
-            <Spacer y={1} />
+            <Spacer y={2} />
             <Button onClick={handleAnalysis} disabled={!videoData}>
                 Analyze
             </Button>

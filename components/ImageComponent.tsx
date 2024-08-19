@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { Button, Input, Spacer } from '@nextui-org/react';
+import { subtitle, title } from "@/components/primitives";
 const ImageComponent: React.FC = () => {
     const [imageData, setImageData] = useState<string>('');
     const [result, setResult] = useState<string>('');
@@ -34,11 +35,20 @@ const ImageComponent: React.FC = () => {
 
     return (
         <div>
-            <h2>Upload Image for Text Extraction</h2>
-            <input type="file" accept="image/*" onChange={handleFileChange} />
-            <button onClick={handleExtraction}>Extract</button>
+            <h2 className={subtitle()} >Upload Image for Text Extraction</h2>
+            <Spacer y={2} />
+            <Input
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                fullWidth
+                aria-label="Upload Image" />
+            <Spacer y={2} />
+
+            <Button onClick={handleExtraction}>Extract</Button>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {result && <div><h3>Result:</h3><p>{result}</p></div>}
+
         </div>
     );
 };

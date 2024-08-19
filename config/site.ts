@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Complaint Analyzer",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -60,7 +60,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
+    github: "https://github.com/purohitamann/multimodal-complaint-analyzer",
     docs: "https://nextui-docs-v2.vercel.app",
    
   },

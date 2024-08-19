@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { subtitle } from "@/components/primitives";
 const VoiceComponent: React.FC = () => {
     const [voiceData, setVoiceData] = useState<string>('');
     const [result, setResult] = useState<string>('');
@@ -27,7 +27,7 @@ const VoiceComponent: React.FC = () => {
 
     return (
         <div>
-            <h2>Upload Voice File for Transcription</h2>
+            <h2 className={subtitle()}>Upload Voice File for Transcription</h2>
             <input type="file" accept="audio/*" onChange={handleFileChange} />
             <button onClick={handleTranscription}>Transcribe</button>
             {result && <div><h3>Result:</h3><p>{result}</p></div>}

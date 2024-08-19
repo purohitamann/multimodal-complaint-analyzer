@@ -5,6 +5,8 @@ import { Button, ButtonGroup } from "@nextui-org/button";
 import clsx from "clsx";
 import { link as linkStyles } from "@nextui-org/theme";
 import { Textarea } from "@nextui-org/input";
+import { subtitle } from "@/components/primitives";
+import { Spacer } from "@nextui-org/spacer";
 const TextComponent: React.FC = () => {
     const [inputText, setInputText] = useState<string>('');
     const [analysisResult, setAnalysisResult] = useState<string>('');
@@ -27,22 +29,21 @@ const TextComponent: React.FC = () => {
 
     return (
         <div>
-
+            <p className={subtitle()}>Enter Complaint for Category Analysis</p>
+            <Spacer y={2} />
             {/* <textarea onChange={handleTextChange} /> */}
             <Textarea
-                label="Enter Complaint for Category Analysis"
-                placeholder="Enter your complaint here"
-                className="w-[500px] h-32"
+
+                placeholder="My transaction was declined..."
+                className="w-[500px] "
                 onChange={handleTextChange}
                 value={inputText}
 
             />
-
+            <Spacer y={2} />
 
             <Button
                 onClick={handleAnalyzeText}
-
-            // isLoading={!analysisResult}
             >
                 Analyze
             </Button>
