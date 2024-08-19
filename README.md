@@ -9,7 +9,7 @@
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
 - [next-themes](https://github.com/pacocoursey/next-themes)
-- [Google-Cloud-Platform]("https://console.cloud.google.com/")
+- [Google-Cloud-Platform](https://console.cloud.google.com/)
 
 ## How to Use
 
