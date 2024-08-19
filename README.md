@@ -1,12 +1,4 @@
-# Next.js & NextUI Template
-
-This is a template for creating applications using Next.js 14 (pages directory) and NextUI (v2).
-
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-pages-template)
-
->Note: Since Next.js 14, the pages router is recommend migrating to the [new App Router](https://nextjs.org/docs/app) to leverage React's latest features
->
->Read more: [Pages Router](https://nextjs.org/docs/pages)
+<img src="./public/demo.gif" alt="Video WalkthroughS">
 
 ## Technologies Used
 
@@ -17,14 +9,14 @@ This is a template for creating applications using Next.js 14 (pages directory) 
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
 - [next-themes](https://github.com/pacocoursey/next-themes)
+- [Google-Cloud-Platform]("https://console.cloud.google.com/")
 
 ## How to Use
 
-To create a new project based on this template using `create-next-app`, run the following command:
+clone this repo create a dot env file with your gcp credentails and run your application locally.
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-pages-template
-```
+GOOGLE_CLOUD_API_KEY=your-GCP-API-KEY
+GOOGLE_CLOUD_PROJECT_ID=your-GCP-PROJECT-ID
 
 ### Install dependencies
 
@@ -39,16 +31,6 @@ npm install
 ```bash
 npm run dev
 ```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
 ## License
 
