@@ -9,7 +9,7 @@ export default function DocsPage() {
         <div className="inline-block max-w-lg text-center justify-center ">
           <h1 className={title({ color: "cyan", size: "lg", fullWidth: true })}>Text Complaint Categorization</h1>
 
-          <div  >
+          <div className="w-full flex flex-col items-center justify-center p-12"  >
             <TextComponent />
           </div>
 
