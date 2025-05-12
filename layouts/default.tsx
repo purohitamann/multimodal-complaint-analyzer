@@ -27,9 +27,10 @@ export default function DefaultLayout({
           <p className="text-primary">Google Cloud Platform </p>
         </Link>
         <div>
-          <p className="text-default-600">© 2024 Aman Hiran Purohit</p>
+          <p className="text-default-600">
+            © 2024 Aman Hiran Purohit & Vidhi Kalal
+          </p>
         </div>
-
       </footer>
     </div>
   );
